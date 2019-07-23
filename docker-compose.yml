@@ -2,10 +2,10 @@ version: '3.6'
 
 services:
     app:
-        image: 'test-app'
+        image: 'angular-env-test-app'
         build: '.'
         ports:
-            - 3001:80
+            - 3005:80
         environment:
             - API_URL=http://${API_DOMAIN}
             - APP_URL=http://${PRIMARY_DOMAIN}

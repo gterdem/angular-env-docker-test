@@ -10,7 +10,7 @@ ENV APP_URL=TEMP_APP_URL
 COPY nginx.conf /etc/nginx/nginx.conf
 
 WORKDIR /usr/share/nginx/html
-COPY dist/test-app/ .
+COPY dist/angular-env-docker-test/ .
 
 # Copy the EntryPoint
 COPY entryPoint.sh .
