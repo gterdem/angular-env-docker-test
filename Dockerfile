@@ -1,5 +1,5 @@
 FROM nginx:stable-alpine
-LABEL name="gterdem@sakarya.edu.tr"
+LABEL name="gterdem@gmail.com"
 
 ARG API_URL
 ARG APP_URL
