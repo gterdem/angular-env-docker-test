@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Build
 
-Run `ng build --prod` to build the project. Then run `docker-compose build` to build the image.
+Rename `.env.sample` file to `.env` Run `ng build --prod` to build the project. Then run `docker-compose build` to build the image.
 
 ## RUN
 
