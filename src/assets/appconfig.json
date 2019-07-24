@@ -1,6 +1,6 @@
 {
-    "remoteServiceBaseUrl": "http://myapi.mydomain.com",
-    "appBaseUrl": "http://mydomain.com",
+    "remoteServiceBaseUrl": "http://localhost:22742",
+    "appBaseUrl": "http://localhost:4200",
     "localeMappings": {
         "angular": [
             {
