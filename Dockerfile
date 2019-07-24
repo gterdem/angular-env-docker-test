@@ -4,8 +4,7 @@ LABEL name="gterdem@gmail.com"
 ARG API_URL
 ARG APP_URL
 
-ENV API_URL=TEMP_API_URL
-ENV APP_URL=TEMP_APP_URL
+ENV FILE_PATH="/usr/share/nginx/html/assets/appconfig.production.json"
 
 # TO use Jq in alpine image
 RUN apk update \
@@ -21,7 +20,7 @@ COPY dist/angular-env-docker-test/ .
 COPY entryPoint.sh .
 RUN chmod +x entryPoint.sh
 
-ENTRYPOINT ["./entryPoint.sh", "/usr/share/nginx/html/assets/appconfig.production.json"]
+ENTRYPOINT ["./entryPoint.sh"]
 
 # run nginx
 CMD ["nginx", "-g", "daemon off;"]
